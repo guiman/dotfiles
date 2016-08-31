@@ -1,6 +1,24 @@
 " No reason to limit ourselves to vi compatibility
 set nocompatible
 
+" VIM Vundle Configuration
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'gmarik/vundle'
+Plugin 'tpope/vim-fugitive'
+Plugin 'jistr/vim-nerdtree-tabs.git'
+Plugin 'scrooloose/nerdtree.git'
+Plugin 'skwp/vim-spec-finder'
+Plugin 'tpope/vim-rails.git'
+Plugin 'rking/ag.vim'
+Plugin 'vim-ruby/vim-ruby.git'
+Plugin 'tpope/vim-commentary'
+call vundle#end()
+filetype plugin indent on
+
 " reload .vimrc automatically
 autocmd! bufwritepost .vimrc source %
 
@@ -90,6 +108,9 @@ syntax on
 
 " show line number
 set number
+
+" make backspace behave as normal
+set backspace=indent,eol,start
 
 highlight ColorColumn ctermbg=235 guibg=#2c2d27
 let &colorcolumn=join(range(81,999),",")
