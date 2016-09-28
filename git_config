@@ -1,0 +1,11 @@
+[alias]
+	st = status
+	co = checkout
+	l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[user]
+	email = alvarola@gmail.com
+	name = Alvaro F. Lara
+[core]
+	editor = vim
+[commit]
+  template = ~/.gitmessage
