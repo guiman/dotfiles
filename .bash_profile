@@ -39,4 +39,5 @@ function set_prefix {
 
 
 export PATH="$HOME/.rbenv/bin:$PATH"
+alias got="echo 'Winter is coming! Also, did you mean: git'"
 eval "$(rbenv init -)"

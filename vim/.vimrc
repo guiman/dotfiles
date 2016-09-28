@@ -16,6 +16,8 @@ Plugin 'tpope/vim-rails.git'
 Plugin 'rking/ag.vim'
 Plugin 'vim-ruby/vim-ruby.git'
 Plugin 'tpope/vim-commentary'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'airblade/vim-gitgutter'
 call vundle#end()
 filetype plugin indent on
 
